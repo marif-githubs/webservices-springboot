@@ -22,7 +22,11 @@ public class Services {
     }
 
     public TODOitem appendList(TODOitem item) {
-        //field validation
+
+        if(item.gettodo() == null || item.getdeadline() == null){
+            System.out.println("null");
+            return null;
+        }
 
         item.setId(getRandomId());
         list.add(item);

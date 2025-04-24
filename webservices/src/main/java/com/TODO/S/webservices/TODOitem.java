@@ -5,6 +5,12 @@ public class TODOitem {
     private String todo;
     private String deadline;
 
+    public TODOitem(String id, String todo, String deadline){
+        this.id = id;
+        this.todo = todo;
+        this.deadline = deadline;
+    }
+
     public String getId() {
         return id;
     }
@@ -32,9 +38,4 @@ public class TODOitem {
         return todo;
     }
 
-    public TODOitem(String id, String todo, String deadline){
-        this.id = id;
-        this.todo = todo;
-        this.deadline = deadline;
-    }
 }
